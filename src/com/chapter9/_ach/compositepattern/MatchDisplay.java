@@ -1,9 +1,9 @@
 package com.chapter9._ach.compositepattern;
 
 public class MatchDisplay {
-	TeamComponent teamComponent;
+	ATeamComponent teamComponent;
 	
-	public MatchDisplay(TeamComponent teamComponent){
+	public MatchDisplay(ATeamComponent teamComponent){
 		this.teamComponent = teamComponent;
 	}
 	

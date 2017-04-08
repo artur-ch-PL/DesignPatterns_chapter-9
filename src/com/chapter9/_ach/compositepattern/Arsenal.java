@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Arsenal extends Team {
-	List<TeamComponent>	players	= new ArrayList<TeamComponent>();
+	List<ATeamComponent>	players	= new ArrayList<ATeamComponent>();
 	Player				gk		= new Player("Szczesny", "GK", 1);
 	Player				cbleft	= new Player("Mertesacker", "CB", 4);
 	Player				cbright	= new Player("Koscielny", "CB", 5);
 
-	public List<TeamComponent> getPlayers() {
+	public List<ATeamComponent> getPlayers() {
 		players.add(gk);
 		players.add(cbleft);
 		players.add(cbright);

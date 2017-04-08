@@ -1,6 +1,6 @@
 package com.chapter9._ach.compositepattern;
 
-public class Player extends TeamComponent {
+public class Player extends ATeamComponent {
 	String name;
 	String position;
 	Integer number;

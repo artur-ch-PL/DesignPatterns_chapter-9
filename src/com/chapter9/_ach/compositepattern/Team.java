@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Team extends TeamComponent{
-	List<TeamComponent> teamComponents = new ArrayList<TeamComponent>();
+public class Team extends ATeamComponent{
+	List<ATeamComponent> teamComponents = new ArrayList<ATeamComponent>();
 	
 	String name;
 	String description;
@@ -17,15 +17,15 @@ public class Team extends TeamComponent{
 		this.description = description;
 	}
 	
-	public void add(TeamComponent teamComponent){
+	public void add(ATeamComponent teamComponent){
 		teamComponents.add(teamComponent);
 	}
 	
-	public void add(List<TeamComponent> teamComponent){
+	public void add(List<ATeamComponent> teamComponent){
 		teamComponents.addAll(teamComponent);
 	}
 	
-	public void remove(TeamComponent teamComponent){
+	public void remove(ATeamComponent teamComponent){
 		teamComponent.remove(teamComponent);
 	}
 	
@@ -35,9 +35,9 @@ public class Team extends TeamComponent{
 		System.out.println(name);
 		System.out.println("====================");
 		System.out.println(description);
-		Iterator<TeamComponent> iterator = teamComponents.iterator();
+		Iterator<ATeamComponent> iterator = teamComponents.iterator();
 		while(iterator.hasNext()){
-			TeamComponent teamcomponent =  iterator.next();
+			ATeamComponent teamcomponent =  iterator.next();
 			teamcomponent.print();
 		}
 	}
@@ -52,7 +52,7 @@ public class Team extends TeamComponent{
 		return name;
 	}
 	
-	public List<TeamComponent> getPlayers(){
+	public List<ATeamComponent> getPlayers(){
 		return teamComponents;
 	}
 }

@@ -8,7 +8,7 @@ public class ArsenalClub implements IClub {
 	
 	public ArsenalClub(){
 		players.add(new Player("Szczesny"));
-		players.add(new Player("Gnarby"));
+		players.add(new Player("Ramsey"));
 	}
 	
 	public ArrayList<Player> getPlayers(){

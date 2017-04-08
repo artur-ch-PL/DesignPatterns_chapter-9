@@ -1,11 +1,11 @@
 package com.chapter9._ach.compositepattern;
 
-public abstract class TeamComponent {
-	public void add(TeamComponent teamComponent) {
+public abstract class ATeamComponent {
+	public void add(ATeamComponent teamComponent) {
 		throw new UnsupportedOperationException();
 	}
 
-	public void remove(TeamComponent teamComponent) {
+	public void remove(ATeamComponent teamComponent) {
 		throw new UnsupportedOperationException();
 	}
 
